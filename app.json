@@ -1,19 +1,13 @@
 {
-  "name": "URL Upload Bot",
-  "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot 🤖.",
+  "name": "PDF Bot",
+  "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot for PDF editing🤖.",
   "logo": "https://telegra.ph/file/7f5b5be68dd506edc4d5d.jpg",
   "keywords": [
     "telegram",
     "best",
-    "youtube",
-    "downloader",
-    "open",
-    "source",
-    "multi",
-    "purpose",
-    "ffmpeg",
-    "remote",
-    "uploader"
+    "PDF",
+    "Bot",
+
   ],
   "success_url": "https://telegram.dog/AnyDLBot",
   "website": "https://github.com/SpEcHiDe/AnyDLBot",
