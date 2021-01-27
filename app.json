@@ -6,8 +6,6 @@
     "telegram",
     "best",
     "PDF",
-    "Bot",
-
   ],
   "success_url": "https://telegram.dog/PDF_Free_Robot",
   "website": "https://github.com/zeshuaro/telegram-pdf-bot",
