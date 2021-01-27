@@ -38,10 +38,7 @@
     }
   ],
  "formation": {
-       "worker": {
-           "quantity": 1,
-           "size": "free"
-       }
+       "worker": {}
   },
    "stack": "heroku-20"
   
