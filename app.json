@@ -22,18 +22,7 @@
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
       "value": ""
-    },
-    "APP_URL": {
-      "description": "Enter Your Google App URL here",
-      "value": ""
-    },
-    "GCP_KEY": {
-      "description": "Google Console Key",
-      "value": ""
-    },
-    "GCP_CRED": {
-      "description": "Google Credentials Id",
-      "value": ""
+    },    
     },
     "SLACK_TOKEN": {
       "description": "Slack Token Get it from https://api.slack.com/tokens",
