@@ -11,10 +11,6 @@
   "website": "https://mrbotdeveloper.github.io/PDF-Bot/",
   "repository": "https://github.com/MrBotDeveloper/PDF-Bot",
   "env": {
-    "WEBHOOK": {
-      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
-      "value": "ANYTHING"
-    },
     "DEV_TELE_ID": {
       "description": "YOUR_TELEGRAM_USER_ID",
       "value": ""
