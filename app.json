@@ -9,7 +9,7 @@
   ],
   "success_url": "https://telegram.dog/PDF_Free_Robot",
   "website": "https://mrbotdeveloper.github.io/PDF-Bot/",
-  "repository": "https://github.com/zeshuaro/telegram-pdf-bot",
+  "repository": "https://github.com/MrBotDeveloper/PDF-Bot",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
