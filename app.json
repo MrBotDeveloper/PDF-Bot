@@ -37,9 +37,6 @@
     "url": "heroku/python"
     }
   ],
- "formation": {
-       "worker": {}
-  },
    "stack": "heroku-20"
   
   
