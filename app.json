@@ -50,7 +50,6 @@
     "STRIPE_TOKEN": {
       "description": "Stripe Token get this value from https://stripe.com/docs/api/tokens/object",
       "value": ""
-    },
   },
   "addons": [
   ],
