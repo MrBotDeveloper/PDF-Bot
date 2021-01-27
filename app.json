@@ -8,7 +8,7 @@
     "PDF",
   ],
   "success_url": "https://telegram.dog/PDF_Free_Robot",
-  "website": "https://github.com/zeshuaro/telegram-pdf-bot",
+  "website": "https://mrbotdeveloper.github.io/PDF-Bot/",
   "repository": "https://github.com/zeshuaro/telegram-pdf-bot",
   "env": {
     "WEBHOOK": {
