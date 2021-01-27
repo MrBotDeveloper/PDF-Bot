@@ -2,11 +2,7 @@
   "name": "PDF Bot",
   "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot for PDF editing🤖.",
   "logo": "https://telegra.ph/file/7f5b5be68dd506edc4d5d.jpg",
-  "keywords": [
-    "telegram",
-    "best",
-    "PDF",
-  ],
+  "keywords": ["telegram","best","PDF"],
   "success_url": "https://telegram.dog/PDF_Free_Robot",
   "website": "https://mrbotdeveloper.github.io/PDF-Bot/",
   "repository": "https://github.com/MrBotDeveloper/PDF-Bot",
@@ -46,19 +42,11 @@
     "STRIPE_TOKEN": {
       "description": "Stripe Token get this value from https://stripe.com/docs/api/tokens/object",
       "value": ""
-    },
-  },
-  "addons": [
-  ],
-  "buildpacks": [{
-    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-  }, {
-    "url": "heroku/python"
-  }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
     }
-  }
+  },
+  "buildpacks": [
+    {
+    "url": "heroku/python"
+    }
+  ]
 }
