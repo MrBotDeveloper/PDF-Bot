@@ -10,8 +10,8 @@
 
   ],
   "success_url": "https://telegram.dog/PDF_Free_Robot",
-  "website": "https://github.com/MrBotDeveloper/PDF-Bot",
-  "repository": "https://github.com/MrBotDeveloper/PDF-Bot",
+  "website": "https://github.com/zeshuaro/telegram-pdf-bot",
+  "repository": "https://github.com/zeshuaro/telegram-pdf-bot",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
