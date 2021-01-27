@@ -22,7 +22,6 @@
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
       "value": ""
-    },    
     },
     "SLACK_TOKEN": {
       "description": "Slack Token Get it from https://api.slack.com/tokens",
