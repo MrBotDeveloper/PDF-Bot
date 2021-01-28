@@ -11,6 +11,7 @@ pdfminer.six==20201018
 python-dotenv==0.15.0
 python-telegram-bot==13.1
 Pillow==8.1.0
+https://github.com/prgofficial/pyrogram/archive/asyncio-dev.zip
 PyPDF2==1.26.0
 slackclient==2.9.3
 textblob==0.15.3
