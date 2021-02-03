@@ -17,3 +17,4 @@ textblob==0.15.3
 WeasyPrint==52.2
 git+https://github.com/zeshuaro/noteshrink.git#egg=noteshrink
 git+https://github.com/zeshuaro/pdf-diff#egg=pdf_diff
+nltk
