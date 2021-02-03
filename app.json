@@ -14,14 +14,17 @@
     "TELE_TOKEN": {
       "description": "YOUR_TELEGRAM_BOT_TOKEN",
       "value": ""
-    },
+    }
   },
   "buildpacks": [
     {
     "url": "heroku/python"
     }
   ],
-   "stack": "heroku-20"
-  
-  
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
 }
