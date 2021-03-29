@@ -3,12 +3,12 @@ google-cloud-datastore==2.1.0
 humanize==3.2.0
 img2pdf==0.4.0
 Logbook==1.5.3
-matplotlib==3.3.4
+matplotlib==3.4.0
 ocrmypdf==11.6.2
 pdfCropMargins==1.0.3
 pdf2image==1.14.0
 pdfminer.six==20201018
-python-dotenv==0.15.0
+python-dotenv==0.16.0
 python-telegram-bot==13.4.1
 Pillow==8.1.0
 PyPDF2==1.26.0
