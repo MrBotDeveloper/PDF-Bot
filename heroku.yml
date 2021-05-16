@@ -6,4 +6,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: bash start.sh
+  worker: python bot.py
