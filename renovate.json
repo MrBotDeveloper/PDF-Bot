@@ -3,7 +3,7 @@
   "labels": ["dependencies"],
   "stabilityDays": 3,
   "prCreation": "not-pending",
-  "schedule": ["after 6pm every weekday", "every weekend"],
+  "schedule": ["after 6pm every day", "every weekend"],
   "timezone": "Australia/Sydney",
   "packageRules": [
     {
