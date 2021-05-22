@@ -12,6 +12,5 @@ RUN pip install -r requirements.txt
 
 RUN pybabel compile -D pdf_bot -d locale
 
-EXPOSE ${PORT}
 
 CMD ["python", "bot.py"]
