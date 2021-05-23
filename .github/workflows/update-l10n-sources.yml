@@ -1,0 +1,60 @@
+name: update-l10n-sources
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  update-l10n-sources:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.7"
+
+      - name: Restore pip cache 💾
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Install Babel ⚙️
+        run: |
+          pip3 install -U pip
+          pip3 install Babel==2.9.0
+      - name: Update localization source file 📄
+        run: |
+          pybabel extract bot.py pdf_bot/ -o locale/pdf_bot.pot
+          pybabel update -l locale -i locale/pdf_bot.pot -o locale/en_GB/LC_MESSAGES/pdf_bot.po
+          echo NUM_DIFFS=$(git diff --shortstat | egrep -o '[0-9]+ i' | egrep -o '[0-9]+') >> $GITHUB_ENV
+      - name: Commit changes 🆕
+        if: env.NUM_DIFFS > 1
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update localization source file
+          file_pattern: locale/en_GB/LC_MESSAGES/pdf_bot.po
+          push_options: --force
+
+      - name: Upload sources and download translations 🌐
+        if: env.NUM_DIFFS > 1
+        uses: crowdin/github-action@1.1.0
+        with:
+          upload_sources: true
+          upload_translations: false
+          download_translations: true
+          create_pull_request: true
+          pull_request_labels: "automerge, l10n"
+          config: ./crowdin.yml
+          source: locale/en_GB/LC_MESSAGES/pdf_bot.po
+          translation: /locale/%locale_with_underscore%/LC_MESSAGES/pdf_bot.po
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
