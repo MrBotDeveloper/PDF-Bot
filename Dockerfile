@@ -11,5 +11,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN pybabel compile -D pdf_bot -d locale
 
-
 CMD ["python3", "bot.py"]
