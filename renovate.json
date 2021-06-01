@@ -8,14 +8,9 @@
   "packageRules": [
     {
       "matchPaths": [".github/workflows/*.yml"],
-      "labels": ["github-actions"]
+      "labels": ["github-actions"],
+      "automerge": true
     },
-    { "matchFiles": ["Dockerfile"], "labels": ["docker"] }, 
-    {
-      "lockFileMaintenance": {
-        "enabled": true, 
-        "automerge": true
-      }
-    }
+    { "matchFiles": ["Dockerfile"], "labels": ["docker"], "automerge": true},
   ]
 }
