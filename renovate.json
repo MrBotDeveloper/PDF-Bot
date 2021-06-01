@@ -10,6 +10,12 @@
       "matchPaths": [".github/workflows/*.yml"],
       "labels": ["github-actions"]
     },
-    { "matchFiles": ["Dockerfile"], "labels": ["docker"] }
+    { "matchFiles": ["Dockerfile"], "labels": ["docker"] }, 
+    {
+      "lockFileMaintenance": {
+        "enabled": true, 
+        "automerge": true
+      }
+    }
   ]
 }
