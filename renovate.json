@@ -11,6 +11,6 @@
       "labels": ["github-actions"],
       "automerge": true
     },
-    { "matchFiles": ["Dockerfile"], "labels": ["docker"], },
+    { "matchFiles": ["Dockerfile"], "labels": ["docker"] },
   ]
 }
