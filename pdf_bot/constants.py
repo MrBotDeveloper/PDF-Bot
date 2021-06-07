@@ -8,7 +8,7 @@ _ = t.gettext
 TEXT_FILTER = Filters.text & ~Filters.command
 
 # Bot constants
-CHANNEL_NAME = "gunasekharravilla"
+CHANNEL_NAME = "Mr. Developer"
 SET_LANG = "set_lang"
 
 # PDF file validation constants
