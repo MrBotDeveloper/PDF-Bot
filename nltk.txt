@@ -1,3 +1,5 @@
+popular
+stopwords
 wordnet
-pros_cons 
-reuters
+punkt
+pros_cons
