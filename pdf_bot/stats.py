@@ -55,8 +55,8 @@ def get_stats(update, context):
 
                     langs[lang] += 1
 
-    launch_date = date(2017, 7, 1)
-    stats_date = date(2019, 7, 1)
+    launch_date = date(2021, 2, 1)
+    stats_date = date(2021, 2, 1)
     curr_date = date.today()
 
     launch_diff = (curr_date - launch_date).days

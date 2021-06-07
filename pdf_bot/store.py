@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 from google.cloud import datastore
 from telegram import User
+import json
 
 from pdf_bot.constants import USER, LANGUAGE, LANGS_SHORT
 
@@ -11,7 +12,7 @@ load_dotenv()
 GCP_KEY_FILE = os.environ.get("GCP_KEY_FILE")
 GCP_CRED = os.environ.get("GCP_CRED")
 
-if GCP_CRED is not None:
+if GCP_CRED is None:
     with open(GCP_KEY_FILE, "w") as f:
         f.write(GCP_CRED)
 

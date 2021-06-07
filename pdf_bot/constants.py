@@ -8,7 +8,7 @@ _ = t.gettext
 TEXT_FILTER = Filters.text & ~Filters.command
 
 # Bot constants
-CHANNEL_NAME = "pdf2botdev"
+CHANNEL_NAME = "gunasekharravilla"
 SET_LANG = "set_lang"
 
 # PDF file validation constants
@@ -73,15 +73,13 @@ PDF_INFO = "pdf_info"
 # Payment Constants
 PAYMENT = "payment"
 PAYMENT_PAYLOAD = "payment_payload"
-CURRENCY = "USD"
+CURRENCY = "INR"
 PAYMENT_PARA = "payment_para"
-THANKS = _("Say Thanks 😁 ($1)")
-COFFEE = _("Coffee ☕ ($3)")
-BEER = _("Beer 🍺 ($5)")
-MEAL = _("Meal 🍲 ($10)")
-CUSTOM = _("Say Awesome 🤩 (Custom)")
-PAYMENT_DICT = {THANKS: 1, COFFEE: 3, BEER: 5, MEAL: 10}
-CUSTOM_MSG = _("Send me the amount that you'll like to support PDF Bot")
+THANKS = _("Say Thanks 😁 (₹10)")
+COFFEE = _("Coffee ☕ (₹30)")
+BEER = _("Book 🍺 (₹50)")
+MEAL = _("Meal 🍲 (₹100)")
+PAYMENT_DICT = {THANKS: 10, COFFEE: 30, BEER: 50, MEAL: 100}
 WAIT_PAYMENT = 0
 
 # Datastore constants
@@ -91,38 +89,8 @@ LANGUAGE = "language"
 # Language constants
 LANGUAGES = {
     "🇬🇧 English (UK)": "en_GB",
-    "🇺🇸 English (US)": "en_US",
-    "🇭🇰 廣東話": "zh_HK",
-    "🇹🇼 繁體中文": "zh_TW",
-    "🇨🇳 简体中文": "zh_CN",
-    "🇮🇹 Italiano": "it_IT",
-    "🇦🇪 ٱلْعَرَبِيَّة‎": "ar_SA",
-    "🇳🇱 Nederlands": "nl_NL",
-    "🇧🇷 Português do Brasil": "pt_BR",
-    "🇪🇸 español": "es_ES",
-    "🇹🇷 Türkçe": "tr_TR",
-    "🇮🇱 עברית": "he_IL",
-    "🇷🇺 русский язык": "ru_RU",
-    "🇫🇷 français": "fr_FR",
-    "🇱🇰 සිංහල": "si_LK",
-    "🇿🇦 Afrikaans": "af_ZA",
-    "català": "ca_ES",
-    "🇨🇿 čeština": "cs_CZ",
-    "🇩🇰 dansk": "da_DK",
-    "🇫🇮 suomen kieli": "fi_FI",
-    "🇩🇪 Deutsch": "de_DE",
-    "🇬🇷 ελληνικά": "el_GR",
-    "🇭🇺 magyar nyelv": "hu_HU",
-    "🇯🇵 日本語": "ja_JP",
-    "🇰🇷 한국어": "ko_KR",
-    "🇳🇴 norsk": "no_NO",
-    "🇵🇱 polski": "pl_PL",
-    "🇵🇹 português": "pt_PT",
-    "🇷🇴 Daco-Romanian": "ro_RO",
-    # "🇷🇸 српски језик": "sr_SP",
-    "🇸🇪 svenska": "sv_SE",
-    "🇺🇦 українська мова": "uk_UA",
-    "🇻🇳 Tiếng Việt": "vi_VN",
+    "🇺🇸 English (US)": "en_US",    
+    "🇮🇳 हिन्दी": "hi_IN",
 }
 
 LANGS_SHORT = {x.split("_")[0]: x for x in LANGUAGES.values()}
