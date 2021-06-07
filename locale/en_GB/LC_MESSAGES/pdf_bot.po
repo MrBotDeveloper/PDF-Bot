@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-pdf-bot VERSION\n"
 "Report-Msgid-Bugs-To: zeshuaro@gmail.com\n"
-"POT-Creation-Date: 2021-01-21 07:49+0000\n"
+"POT-Creation-Date: 2021-06-07 12:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: locale\n"
@@ -60,7 +60,7 @@ msgid ""
 "/watermark - add watermark to PDF files"
 msgstr ""
 
-#: bot.py:212 pdf_bot/constants.py:84
+#: bot.py:212
 msgid "Send me the amount that you'll like to support PDF Bot"
 msgstr ""
 
@@ -165,23 +165,19 @@ msgid "Compress"
 msgstr ""
 
 #: pdf_bot/constants.py:78
-msgid "Say Thanks 😁 ($1)"
+msgid "Say Thanks 😁 (₹10)"
 msgstr ""
 
 #: pdf_bot/constants.py:79
-msgid "Coffee ☕ ($3)"
+msgid "Coffee ☕ (₹30)"
 msgstr ""
 
 #: pdf_bot/constants.py:80
-msgid "Beer 🍺 ($5)"
+msgid "Book 🍺 (₹50)"
 msgstr ""
 
 #: pdf_bot/constants.py:81
-msgid "Meal 🍲 ($10)"
-msgstr ""
-
-#: pdf_bot/constants.py:82
-msgid "Say Awesome 🤩 (Custom)"
+msgid "Meal 🍲 (₹100)"
 msgstr ""
 
 #: pdf_bot/feedback.py:46
@@ -198,11 +194,11 @@ msgstr ""
 msgid "Thank you for your feedback, I've already forwarded it to my developer"
 msgstr ""
 
-#: pdf_bot/language.py:24
+#: pdf_bot/language.py:27
 msgid "Select your language"
 msgstr ""
 
-#: pdf_bot/language.py:62
+#: pdf_bot/language.py:65
 msgid "Your language has been set to {}"
 msgstr ""
 
@@ -230,15 +226,15 @@ msgstr ""
 msgid "Thank you for your support!"
 msgstr ""
 
-#: pdf_bot/url.py:24
+#: pdf_bot/url.py:26
 msgid "You've sent me this web page already and I'm still converting it"
 msgstr ""
 
-#: pdf_bot/url.py:27
+#: pdf_bot/url.py:29
 msgid "Converting your web page into a PDF file"
 msgstr ""
 
-#: pdf_bot/url.py:39
+#: pdf_bot/url.py:41
 msgid "Unable to reach your web page"
 msgstr ""
 
@@ -895,5 +891,20 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Set Language"
+#~ msgstr ""
+
+#~ msgid "Say Thanks 😁 ($1)"
+#~ msgstr ""
+
+#~ msgid "Coffee ☕ ($3)"
+#~ msgstr ""
+
+#~ msgid "Beer 🍺 ($5)"
+#~ msgstr ""
+
+#~ msgid "Meal 🍲 ($10)"
+#~ msgstr ""
+
+#~ msgid "Say Awesome 🤩 (Custom)"
 #~ msgstr ""
 
