@@ -3,13 +3,14 @@
   "labels": ["dependencies"],
   "stabilityDays": 3,
   "prCreation": "not-pending",
-  "schedule": ["after 6pm every weekday", "every weekend"],
+  "schedule": ["after 6pm every day", "every weekend"],
   "timezone": "Australia/Sydney",
   "packageRules": [
     {
       "matchPaths": [".github/workflows/*.yml"],
-      "labels": ["github-actions"]
+      "labels": ["github-actions"],
+      "automerge": true
     },
-    { "matchFiles": ["Dockerfile"], "labels": ["docker"] }
+    { "matchFiles": ["Dockerfile"], "labels": ["docker"], "automerge": true }
   ]
 }
