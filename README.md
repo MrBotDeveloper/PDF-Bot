@@ -1,12 +1,12 @@
 # Telegram PDF Bot
 
-[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue.svg)](https://t.me/pdfbot)
-[![MIT License](https://img.shields.io/github/license/MrBotDeveloper/telegram-pdf-bot.svg)](https://github.com/MrBotDeveloper/telegram-pdf-bot/blob/master/LICENSE)
-[![Build Status](https://travis-ci.com/MrBotDeveloper/telegram-pdf-bot.svg?branch=master)](https://travis-ci.com/MrBotDeveloper/telegram-pdf-bot)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4044596f649742fdb9b9c0acd80c321e)](https://www.codacy.com/app/MrBotDeveloper/telegram-pdf-bot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MrBotDeveloper/telegram-pdf-bot&amp;utm_campaign=Badge_Grade)
+[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue.svg)](https://github.com/MrBotDeveloper/PDF-Bot)
+[![MIT License](https://img.shields.io/github/license/MrBotDeveloper/telegram-pdf-bot.svg)](https://github.com/MrBotDeveloper/PDF-Bot/blob/master/LICENSE)
+[![Build Status](https://travis-ci.com/MrBotDeveloper/telegram-pdf-bot.svg?branch=master)](https://travis-ci.com/MrBotDeveloper/PDF-Bot)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4044596f649742fdb9b9c0acd80c321e)](https://www.codacy.com/app/MrBotDeveloper/PDF-Bot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MrBotDeveloper/telegram-pdf-bot&amp;utm_campaign=Badge_Grade)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Crowdin](https://badges.crowdin.net/telegram-pdf-bot/localized.svg)](https://crowdin.com/project/telegram-pdf-bot)
-[![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-blue.svg)](https://t.me/pdf2botdev)
+[![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-blue.svg)](https://t.me/NACBots)
 
 A Telegram bot that can:
 
