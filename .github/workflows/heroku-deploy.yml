@@ -16,5 +16,6 @@ jobs:
           usedocker: true
           docker_heroku_process_type: worker
         env:
-          TELE_TOKEN: ${{secrets.TELE_TOKEN}}
-          DEV_TELE_ID: ${{secrets.DEV_TELE_ID}}
+          HD_TELE_TOKEN: ${{secrets.TELE_TOKEN}}
+          HD_DEV_TELE_ID: ${{secrets.DEV_TELE_ID}}
+          HD_GOOGLE_APPLICATION_CREDENTIALS: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}}
