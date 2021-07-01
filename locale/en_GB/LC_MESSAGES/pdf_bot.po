@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-pdf-bot VERSION\n"
 "Report-Msgid-Bugs-To: zeshuaro@gmail.com\n"
-"POT-Creation-Date: 2021-06-29 03:14+0000\n"
+"POT-Creation-Date: 2021-07-01 03:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: locale\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: bot.py:146
+#: bot.py:149
 msgid ""
 "Welcome to PDF Bot!\n"
 "\n"
@@ -33,19 +33,19 @@ msgid ""
 "Type /help to see how to use PDF Bot"
 msgstr ""
 
-#: bot.py:165
+#: bot.py:168
 msgid "Set Language 🌎"
 msgstr ""
 
-#: bot.py:167 pdf_bot/utils.py:307
+#: bot.py:170 pdf_bot/utils.py:307
 msgid "Join Channel"
 msgstr ""
 
-#: bot.py:168 pdf_bot/payment.py:78 pdf_bot/utils.py:308
+#: bot.py:171 pdf_bot/payment.py:78 pdf_bot/utils.py:308
 msgid "Support PDF Bot"
 msgstr ""
 
-#: bot.py:174
+#: bot.py:177
 msgid ""
 "You can perform most of the tasks by sending me one of the followings:\n"
 "- PDF files\n"
@@ -58,6 +58,10 @@ msgid ""
 "/photo - convert and combine multiple photos into PDF files\n"
 "/text - create PDF files from text messages\n"
 "/watermark - add watermark to PDF files"
+msgstr ""
+
+#: bot.py:212
+msgid "Send me the amount that you'll like to support PDF Bot"
 msgstr ""
 
 #: pdf_bot/constants.py:38
@@ -169,24 +173,24 @@ msgid "Coffee ☕ (₹30)"
 msgstr ""
 
 #: pdf_bot/constants.py:80
-msgid "Book 📚 (₹50)"
+msgid "Book 🍺 (₹50)"
 msgstr ""
 
 #: pdf_bot/constants.py:81
 msgid "Meal 🍲 (₹100)"
 msgstr ""
 
-#: pdf_bot/feedback.py:48
+#: pdf_bot/feedback.py:46
 msgid ""
 "Send me your feedback (only English feedback will be forwarded to my "
 "developer)"
 msgstr ""
 
-#: pdf_bot/feedback.py:81
+#: pdf_bot/feedback.py:79
 msgid "The feedback is not in English, try again"
 msgstr ""
 
-#: pdf_bot/feedback.py:104
+#: pdf_bot/feedback.py:99
 msgid "Thank you for your feedback, I've already forwarded it to my developer"
 msgstr ""
 
@@ -908,5 +912,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Book 🍺 (₹50)"
+#~ msgstr ""
+
+#~ msgid "Book 📚 (₹50)"
 #~ msgstr ""
 
