@@ -77,9 +77,9 @@ CURRENCY = "INR"
 PAYMENT_PARA = "payment_para"
 THANKS = _("Say Thanks 😁 (₹10)")
 COFFEE = _("Coffee ☕ (₹30)")
-BEER = _("Book 🍺 (₹50)")
+BEER = _("Book 📚 (₹50)")
 MEAL = _("Meal 🍲 (₹100)")
-PAYMENT_DICT = {THANKS: 10, COFFEE: 30, BEER: 50, MEAL: 100}
+PAYMENT_DICT = {THANKS: 10, COFFEE: 30, BOOK: 50, MEAL: 100}
 WAIT_PAYMENT = 0
 
 # Datastore constants

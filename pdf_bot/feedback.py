@@ -20,6 +20,8 @@ from pdf_bot.utils import cancel, reply_with_cancel_btn
 load_dotenv()
 SLACK_TOKEN = os.environ.get("SLACK_TOKEN")
 
+load_dotenv()
+DEV_TELE_ID = int(os.environ.get("DEV_TELE_ID"))
 
 def feedback_cov_handler() -> ConversationHandler:
     conv_handler = ConversationHandler(
@@ -89,7 +91,10 @@ def receive_feedback(update: Update, context: CallbackContext) -> int:
         response = client.chat_postMessage(channel="#pdf-bot-feedback", text=text)
 
         if response["ok"] and response["message"]["text"] == text:
-            success = True
+            success = True 
+            
+    if SLACK_TOKEN is None:
+        context.bot.send_message(DEV_TELE_ID, text=text)
 
     if not success:
         log = Logger()
