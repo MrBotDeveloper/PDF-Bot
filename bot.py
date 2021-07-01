@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 from logbook import Logger, StreamHandler
 from logbook.compat import redirect_logging
 from telegram import (
-    ForceReply,
     InlineKeyboardButton,
     InlineKeyboardMarkup,
     MessageEntity,
@@ -16,6 +15,7 @@ from telegram import (
     Update,
 )
 from telegram.chataction import ChatAction
+from telegram.error import Unauthorized
 from telegram.ext import (
     CallbackContext,
     CallbackQueryHandler,
@@ -25,7 +25,6 @@ from telegram.ext import (
     PreCheckoutQueryHandler,
     Updater,
 )
-from telegram.error import Unauthorized
 from telegram.ext import messagequeue as mq
 from telegram.utils.request import Request
 
@@ -77,26 +76,23 @@ def main():
     dispatcher = updater.dispatcher
 
     # General commands handlers
+    dispatcher.add_handler(
+        CommandHandler(
+            "start", send_support_options, Filters.regex("support"), run_async=True
+        )
+    )
     dispatcher.add_handler(CommandHandler("start", start_msg, run_async=True))
+
     dispatcher.add_handler(CommandHandler("help", help_msg, run_async=True))
     dispatcher.add_handler(CommandHandler("setlang", send_lang, run_async=True))
     dispatcher.add_handler(
         CommandHandler("support", send_support_options, run_async=True)
-    )
-    dispatcher.add_handler(CommandHandler("send", send_msg, Filters.user(DEV_TELE_ID)))
-    dispatcher.add_handler(
-        CommandHandler("stats", get_stats, Filters.user(DEV_TELE_ID))
     )
 
     # Callback query handler
     dispatcher.add_handler(CallbackQueryHandler(process_callback_query, run_async=True))
 
     # Payment handlers
-    dispatcher.add_handler(
-        MessageHandler(
-            Filters.reply & TEXT_FILTER, receive_custom_amount, run_async=True
-        )
-    )
     dispatcher.add_handler(PreCheckoutQueryHandler(precheckout_check, run_async=True))
     dispatcher.add_handler(
         MessageHandler(Filters.successful_payment, successful_payment, run_async=True)
@@ -120,17 +116,18 @@ def main():
     # Feedback handler
     dispatcher.add_handler(feedback_cov_handler())
 
+    # Dev commands handlers
+    dispatcher.add_handler(CommandHandler("send", send_msg, Filters.user(DEV_TELE_ID)))
+    dispatcher.add_handler(
+        CommandHandler("stats", get_stats, Filters.user(DEV_TELE_ID))
+    )
+
     # Log all errors
     dispatcher.add_error_handler(error_callback)
 
     # Start the Bot
-    if APP_URL is not None:
-        updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TELE_TOKEN)
-        updater.bot.set_webhook(APP_URL + TELE_TOKEN)
-        log.notice("Bot started webhook")
-    else:
-        updater.start_polling()
-        log.notice("Bot started polling")
+    updater.start_polling()
+    log.notice("Bot started polling")
 
     # Run the bot until the you presses Ctrl-C or the process receives SIGINT,
     # SIGTERM or SIGABRT. This should be used most of the time, since
@@ -139,7 +136,7 @@ def main():
 
 
 def start_msg(update: Update, context: CallbackContext) -> None:
-    update.effective_message.chat.send_action(ChatAction.TYPING)
+    update.effective_message.reply_chat_action(ChatAction.TYPING)
 
     # Create the user entity in Datastore
     create_user(update.effective_message.from_user)
@@ -162,7 +159,7 @@ def start_msg(update: Update, context: CallbackContext) -> None:
 
 
 def help_msg(update, context):
-    update.effective_message.chat.send_action(ChatAction.TYPING)
+    update.effective_message.reply_chat_action(ChatAction.TYPING)
     _ = set_lang(update, context)
     keyboard = [
         [InlineKeyboardButton(_("Set Language 🌎"), callback_data=SET_LANG)],
@@ -206,12 +203,6 @@ def process_callback_query(update: Update, context: CallbackContext):
             send_support_options(update, context, query)
         elif data in [THANKS, COFFEE, BEER, MEAL]:
             send_payment_invoice(update, context, query)
-        elif data == CUSTOM:
-            context.bot.send_message(
-                query.from_user.id,
-                _("Send me the amount that you'll like to support PDF Bot"),
-                reply_markup=ForceReply(),
-            )
 
         context.user_data[CALLBACK_DATA].remove(data)
 

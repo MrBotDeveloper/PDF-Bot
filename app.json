@@ -1,18 +1,33 @@
 {
   "name": "PDF Bot",
-  "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot for PDF editing🤖.",
+  "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot for PDF editing 🤖.",
   "logo": "https://telegra.ph/file/7f5b5be68dd506edc4d5d.jpg",
-  "keywords": ["telegram","best","PDF"],
-  "success_url": "https://telegram.dog/PDF_Free_Robot",
+  "keywords": ["telegram","best","heroku","PDF","bot"],
+  "success_url": "https://github.com/MrBotDeveloper",
   "website": "https://mrbotdeveloper.github.io/PDF-Bot/",
   "repository": "https://github.com/MrBotDeveloper/PDF-Bot",
   "env": {
     "DEV_TELE_ID": {
       "description": "YOUR_TELEGRAM_USER_ID",
-      "value": ""
+      "value": "",
+      "required": true
     },
     "TELE_TOKEN": {
       "description": "YOUR_TELEGRAM_BOT_TOKEN",
+      "value": "",
+      "required": true
+    },
+    "GOOGLE_APPLICATION_CREDENTIALS": {
+      "description": "Your GCP Credentials file path if in root directory just put file Name.",
+      "value": "GCP_FILE.json",
+      "required": true 
+    },
+    "STRIPE_TOKEN": {
+      "description": "Get an token from stripe.com for receiving Donations 💰",
+      "value": ""
+    },
+    "SLACK_TOKEN": {
+      "description": "To get all Feedbacks in slack.com not necessary if not entered you will receive feedbacks in telegram.",
       "value": ""
     }
   },

@@ -1,24 +1,70 @@
-# Telegram PDF Bot
+# Telegram PDF Bot 
+
+[![Typing SVG](https://mdtype.herokuapp.com?font=Righteous&color=253AF7&size=31&center=true&vCenter=true&width=500&height=38&lines=A+Powerful+Telegram+PDF+Bot.....+;Deployable+On+Heroku+%F0%9F%9A%80+....+;Repo+Modified+%E2%9C%85+By;%40MrBotDeveloper;Show+Your+%E2%9D%A4%EF%B8%8F;%E2%AD%90+the+repo;Follow+%40MrBotDeveloper+Now...+;For+More+%F0%9F%A5%B0)](https://github.com/MrBotDeveloper)
 
 [![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue.svg)](https://github.com/MrBotDeveloper/PDF-Bot)
 [![MIT License](https://img.shields.io/github/license/MrBotDeveloper/telegram-pdf-bot.svg)](https://github.com/MrBotDeveloper/PDF-Bot/blob/master/LICENSE)
-[![Build Status](https://travis-ci.com/MrBotDeveloper/telegram-pdf-bot.svg?branch=master)](https://travis-ci.com/MrBotDeveloper/PDF-Bot)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4044596f649742fdb9b9c0acd80c321e)](https://www.codacy.com/app/MrBotDeveloper/PDF-Bot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MrBotDeveloper/telegram-pdf-bot&amp;utm_campaign=Badge_Grade)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Crowdin](https://badges.crowdin.net/telegram-pdf-bot/localized.svg)](https://crowdin.com/project/telegram-pdf-bot)
 [![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-blue.svg)](https://t.me/NACBots)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=MrBotDeveloper&repo=PDF-Bot&theme=flag-india)](https://github.com/MrBotDeveloper/PDF-Bot)
+
 
 A Telegram bot that can:
 
 - Compress, crop, decrypt, encrypt, merge, preview, rename, rotate, scale and split PDF files
 - Compare text differences between two PDF files
 - Create PDF files from text messages
-- Add watermark to PDF files
+- Add watermark to PDF files 
+- Multiple languages support
 - Add text layers to PDF files to make them searchable with text
 - Extract images and text from PDF files
 - Convert PDF files into images
 - Beautify handwritten notes images into PDF files
 - Convert webpages and images into PDF files
+
+# Repo Special 😅
+## What's Special in this repo & To-Do's ???
+
+- [x] ~~Make It Heroku Deployable~~
+- [ ] Remove GCP and use another free Cloud Storage.
+  - [ ] Add Broadcasting Feature
+- [ ] Make it more stable and fast
+
+## Mandatory Vars....
+
+```vars.html
+DEV_TELE_ID - Your Telegram ID.
+TELE_TOKEN - Telegram Bot Token get from @BotFather
+GOOGLE_APPLICATION_CREDENTIALS - Your GCP Credentials get from Google Cloud 
+```
+
+## Where To Get The Mandatory Vars..
+
+```DEV_TELE_ID``` - Get it from [Thunder ⚡ Bot](https://t.me/Thunder_GMBot) by sending ```/id```
+
+```TELE_TOKEN``` - Get it from [@BotFather](https://t.me/BotFather)
+
+```GOOGLE_APPLICATION_CREDENTIALS``` - Get it from [Google Cloud ☁️](https://console.cloud.google.com/freetrial)
+
+## Optional Vars....
+
+```vars.txt
+STRIPE_TOKEN - Stripe.com token for receiving Donations.
+SLACK_TOKEN - slack.com api token to recieve Feedbacks on Slack.com if not entered you will recieve in your Telegram 
+```
+
+## Where To Get The Optional Vars...
+
+```STRIPE_TOKEN``` - Get it from [stripe.com](https://stripe.com)
+
+```SLACK_TOKEN``` - Get it from [slack.com](https://api.slack.com/tokens)
+
+### Installation
+
+<details>
+  <summary> Getting GCP Ceredinials ⚠️ Important ⚠️ </summary>
 
 ## Getting Started
 
@@ -27,6 +73,50 @@ These instructions will get you a copy of the project up and running on your loc
 ### Setup Database
 
 The bot uses [Datastore](https://cloud.google.com/datastore) on Google Cloud Platform (GCP). Create a new project on GCP and enabble Datastore in the project. Install the [gcloud CLI](https://cloud.google.com/sdk/) and run `gcloud init` to initialise it with your project.
+
+### Follow [me](https://github.com/MrBotDeveloper) if Love ❣️ the repo.
+
+</details>
+<details>
+<summary> The Easy Way (Heroku) </summary>
+
+## Follow these steps for a successful deployment.....
+  - Star ⭐ the repo 😅 and import it as Private.
+  - Upload your GCP Credentials in the root directory with name `GCP_FILE.json`
+  - Click on the Below Deploy Button ✅
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrBotDeveloper/PDF-Bot/tree/master)
+  
+  - Enter the Ceredinials and Click in deploy.
+  - After Deployment Completed Click on Manage App & Turn on the Dynos....
+  - Booyah!! Your PDF Bot is successfully started.
+  - Enjoy the Bot 🥳.
+## Deploy using GitHub Workflows.....
+  - Star ⭐ the repo 😅 and import it as Private.
+  - Upload your GCP Credentials in the root directory with name `GCP_FILE.json`
+  - Go to Project->Settings->Secrets and Click *New repository secret* and Add All the following Vars as the Repository Secrets.
+  
+  ```HEROKU_API_KEY```: Your Heroku Account API 
+  
+  ```HEROKU_APP_NAME``` : Heroku App Name 
+  
+  ```HEROKU_EMAIL``` : Your Heroku Email 📨 Id 
+  
+  ```DEV_TELE_ID``` : Your Telegram ID.
+
+  ```TELE_TOKEN``` : Telegram Bot Token get from @BotFather
+
+  ```GOOGLE_APPLICATION_CREDENTIALS``` : Your GCP Credentials get from Google Cloud
+
+  - Go To The Actions Tab and Choose ```Manually Deploy To Heroku``` and click on run workflow.
+
+### Follow [me](https://github.com/MrBotDeveloper) if Love ❣️ the repo.
+  
+
+</details>
+
+<details>
+<summary> Local Host </summary>
 
 ### OS Requirements
 
@@ -49,15 +139,6 @@ Create a virtual environment with the following command:
 virtualenv venv
 source venv/bin/activate
 ```
-
-### Installation
-
-#### The Easy Way
-
-#### You can also tap the Deploy To Heroku button below to deploy straight to Heroku!
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrBotDeveloper/PDF-Bot/tree/master)
-
 
 ### Bot Requirements
 
@@ -90,3 +171,21 @@ You can then start the bot with the following command:
 ```bash
 python bot.py
 ```
+
+### Follow [me](https://github.com/MrBotDeveloper) if Love ❣️ the repo.
+
+</details>
+
+
+## Follow [me](https://github.com/MrBotDeveloper) if Love ❣️ the repo.
+
+## Found a Bug 🐛
+
+```Feel free to create a pull or create a issue now and describe your issue freely.```
+
+[![Repo Metrics](https://github.com/MrBotDeveloper/PDF-Bot/blob/master/pdf-bot.metrics.svg)](https://github.com/MrBotDeveloper/PDF-Bot)
+
+## Credits 
+
+- [Me 🥰](https://github.com/MrBotDeveloper) For making Deployable To Heroku
+- zeshuaro for his amazing Creation [Telegram PDF Bot](https://github.com/zeshuaro/telegram-pdf-bot)

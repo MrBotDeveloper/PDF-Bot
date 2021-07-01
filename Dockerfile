@@ -1,4 +1,11 @@
-FROM python:3.9.5
+FROM python:latest
+
+ENV VIRTUAL_ENV "/venv" 
+RUN python -m venv $VIRTUAL_ENV
+ENV PATH "$VIRTUAL_ENV/bin:$PATH"
+RUN . venv/bin/activate
+
+RUN python -m pip install --upgrade pip 
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     poppler-utils=0.71.* libcairo2=1.16.* libpango-1.0-0=1.42.* \
