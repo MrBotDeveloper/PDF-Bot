@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-pdf-bot VERSION\n"
 "Report-Msgid-Bugs-To: zeshuaro@gmail.com\n"
-"POT-Creation-Date: 2021-07-01 03:33+0000\n"
+"POT-Creation-Date: 2021-07-01 03:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: locale\n"
@@ -173,24 +173,24 @@ msgid "Coffee ☕ (₹30)"
 msgstr ""
 
 #: pdf_bot/constants.py:80
-msgid "Book 🍺 (₹50)"
+msgid "Book 📚 (₹50)"
 msgstr ""
 
 #: pdf_bot/constants.py:81
 msgid "Meal 🍲 (₹100)"
 msgstr ""
 
-#: pdf_bot/feedback.py:46
+#: pdf_bot/feedback.py:48
 msgid ""
 "Send me your feedback (only English feedback will be forwarded to my "
 "developer)"
 msgstr ""
 
-#: pdf_bot/feedback.py:79
+#: pdf_bot/feedback.py:81
 msgid "The feedback is not in English, try again"
 msgstr ""
 
-#: pdf_bot/feedback.py:99
+#: pdf_bot/feedback.py:104
 msgid "Thank you for your feedback, I've already forwarded it to my developer"
 msgstr ""
 
