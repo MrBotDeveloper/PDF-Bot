@@ -1,4 +1,3 @@
-
 name: Metrics
 on:
   # Schedule updates (each hour)
@@ -19,4 +18,3 @@ jobs:
           repo: PDF-Bot
           plugin_lines: yes 
           plugin_followup: yes
-          delay: 30
