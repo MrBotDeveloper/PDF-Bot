@@ -185,7 +185,7 @@ python bot.py
 
 <p align="center">
   <a href="https://github.com/MrBotDeveloper/PDF-Bot">
-     <img src="https://github.com/MrBotDeveloper/PDF-Bot/blob/master/pdf-bot.metrics.svg"width="600" height="200">
+     <img src="https://github.com/MrBotDeveloper/PDF-Bot/blob/master/pdf-bot.metrics.svg"width="600" height="195">
   </a>
 </p>
 
