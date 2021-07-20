@@ -192,4 +192,4 @@ python bot.py
 ## Credits 
 
 - [Me 🥰](https://github.com/MrBotDeveloper) For making Deployable To Heroku
-- zeshuaro for his amazing Creation [Telegram PDF Bot](https://github.com/zeshuaro/telegram-pdf-bot)
+- [@zeshuaro](https://github.com/zeshuaro) for his amazing Creation [Telegram PDF Bot](https://github.com/zeshuaro/telegram-pdf-bot)
