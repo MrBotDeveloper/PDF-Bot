@@ -29,8 +29,3 @@ jobs:
     - name: Setup 
       run: |
         pybabel compile -D pdf_bot -d locale
-    - name: Test with pytest
-      run: |
-        pip install pytest 
-        pip install pytest-cov 
-        pytest bot.py
