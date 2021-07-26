@@ -1,10 +1,6 @@
 repo:
 - '*'
 
-@domain/core:
-- package/core/*
-- package/core/**/*
-
 test:
 - pdf_bot/**/*.spec.js
 
