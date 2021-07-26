@@ -1,0 +1,16 @@
+repo:
+- '*'
+
+@domain/core:
+- package/core/*
+- package/core/**/*
+
+test:
+- src/**/*.spec.js
+
+source:
+- any: ['src/**/*', '!src/docs/*']
+
+frontend:
+- any: ['src/**/*.js']
+  all: ['!src/main.js']
