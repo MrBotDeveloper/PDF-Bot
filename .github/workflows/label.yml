@@ -12,4 +12,4 @@ jobs:
     steps:
     - uses: actions/labeler@v3
       with:
-        repo-token: "${{ secrets.GIT_HUB_TOKEN }}"
+        repo-token: ${{ secrets.GIT_HUB_TOKEN }}
