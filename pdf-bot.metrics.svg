@@ -1223,7 +1223,7 @@
                                     <rect class="day" x="150" y="0" width="11" height="11" fill="var(--color-calendar-graph-day-L1-bg)" rx="2" ry="2"/>
                                     <rect class="day" x="165" y="0" width="11" height="11" fill="var(--color-calendar-graph-day-L1-bg)" rx="2" ry="2"/>
                                     <rect class="day" x="180" y="0" width="11" height="11" fill="var(--color-calendar-graph-day-L1-bg)" rx="2" ry="2"/>
-                                    <rect class="day" x="195" y="0" width="11" height="11" fill="var(--color-calendar-graph-day-L2-bg)" rx="2" ry="2"/>
+                                    <rect class="day" x="195" y="0" width="11" height="11" fill="var(--color-calendar-graph-day-L3-bg)" rx="2" ry="2"/>
                                 </g>
                             </svg>
                         </div>
@@ -1302,7 +1302,7 @@
                 </section>
             </div>
             <footer>
-                <span>Last updated 26/07/2021, 12:44 with lowlighter/metrics@3.11.0</span>
+                <span>Last updated 26/07/2021, 12:45 with lowlighter/metrics@3.11.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
