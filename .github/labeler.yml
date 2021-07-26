@@ -6,11 +6,7 @@ repo:
 - package/core/**/*
 
 test:
-- src/**/*.spec.js
+- pdf_bot/**/*.spec.js
 
 source:
-- any: ['src/**/*', '!src/docs/*']
-
-frontend:
-- any: ['src/**/*.js']
-  all: ['!src/main.js']
+- any: ['pdf_bot/**/*', '!pdf_bot/files/*']
