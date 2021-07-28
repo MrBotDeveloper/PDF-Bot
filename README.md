@@ -28,6 +28,7 @@ A Telegram bot that can:
 ## What's Special in this repo & To-Do's ???
 
 - [x] ~~Make It Heroku Deployable~~
+- [x] ~~Add Detailed Guide to get GCP Credentials~~
 - [ ] Remove GCP and use another free Cloud Storage.
   - [ ] Add Broadcasting Feature
 - [ ] Make it more stable and fast
@@ -61,20 +62,40 @@ SLACK_TOKEN - slack.com api token to recieve Feedbacks on Slack.com if not enter
 
 ```SLACK_TOKEN``` - Get it from [slack.com](https://api.slack.com/tokens)
 
-### Installation
+## Installation [ ⚠️ Click On Any Topic To Get it's Detailed Information ⚠️]
 
 <details>
   <summary> Getting GCP Ceredinials ⚠️ Important ⚠️ </summary>
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes
+These instructions will get you a copy of the project up. 
 
 ### Setup Database
 
-The bot uses [Datastore](https://cloud.google.com/datastore) on Google Cloud Platform (GCP). Create a new project on GCP and enabble Datastore in the project. Install the [gcloud CLI](https://cloud.google.com/sdk/) and run `gcloud init` to initialise it with your project.
+The bot uses [Datastore](https://cloud.google.com/datastore) on Google Cloud Platform (GCP). 
 
-### Follow [me](https://github.com/MrBotDeveloper) if Love ❣️ the repo.
+**Sir/Ma'am, Kindly 🤗 follow the below steps to create a valid GCP Credentials File :-**
+
+1. Firstly Go to https://console.cloud.google.com/project
+2. Create a Project.
+3. Open http://console.developers.google.com/project/_/apiui/credential And Click on Create Ceredinials then Click on Service Account.
+4. Enter all the required values. [At the Service Accounts, enter a Service account name and click Create. For Service account permissions, select Project, Owner.]
+5. Select a service account. Click the 3 skewer bar and select Create Key. Select JSON, click Create.
+6. Click Create. The credential file will be downloaded to your local computer or Any Device your are Using. 
+7. Upload the Project Credential file to the bots private repo. 
+8. Then Open https://console.cloud.google.com/datastore/setup .
+9. And enable the FireStore Database. 
+10. Now open https://console.cloud.google.com/iam-admin/iam .
+11. And set the service account's role to owner. **Note: If you can't see your service account in the list click on Add and add your service account with Owner as Role.**
+12. Now Deploy your bot and set ```GOOGLE_APPLICATION_CREDENTIALS``` var with value as the File Name of the Ceredinials Json you uploaded in the repo in Step 7.
+13. Congratulations 🎉 your bot has been Successfully Started 😊 So enjoy 🤗.
+
+```alert.txt
+⚠️ I will Recommend you to Use Only Google Chrome for generating Ceredinials Json as some browsers will not start the Download of the Json file in the Step 6 ⚠️
+```
+
+**Don't Forget to Star 🌟 Repo if ❤️ The Repo and Follow [Me](https://github.com/MrBotDeveloper) to show your ❤️.**
 
 </details>
 <details>
@@ -185,7 +206,7 @@ python bot.py
 
 <p align="center">
   <a href="https://github.com/MrBotDeveloper/PDF-Bot">
-     <img src="https://github.com/MrBotDeveloper/PDF-Bot/blob/master/pdf-bot.metrics.svg"width="600" height="195">
+     <img src="https://github.com/MrBotDeveloper/PDF-Bot/blob/master/pdf-bot.metrics.svg"width="400" height="150">
   </a>
 </p>
 
