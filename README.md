@@ -29,6 +29,8 @@ A Telegram bot that can:
 
 - [x] ~~Make It Heroku Deployable~~
 - [x] ~~Add Detailed Guide to get GCP Credentials~~
+- [ ] Add Private Use Feature
+- [ ] Add Password feature 🔑 for private use
 - [ ] Remove GCP and use another free Cloud Storage.
   - [ ] Add Broadcasting Feature
 - [ ] Make it more stable and fast
@@ -206,7 +208,7 @@ python bot.py
 
 <p align="center">
   <a href="https://github.com/MrBotDeveloper/PDF-Bot">
-     <img src="https://github.com/MrBotDeveloper/PDF-Bot/blob/master/pdf-bot.metrics.svg"width="400" height="150">
+     <img src="https://github.com/MrBotDeveloper/PDF-Bot/blob/master/pdf-bot.metrics.svg"wi>
   </a>
 </p>
 
