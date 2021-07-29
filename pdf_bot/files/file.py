@@ -1,7 +1,8 @@
 from telegram.constants import MAX_FILESIZE_DOWNLOAD
-from telegram.ext import ConversationHandler, CommandHandler, MessageHandler, Filters
+from telegram.ext import CommandHandler, ConversationHandler, Filters, MessageHandler
 
 from pdf_bot.constants import *
+from pdf_bot.files.compress import compress_pdf
 from pdf_bot.files.crop import (
     ask_crop_type,
     ask_crop_value,
@@ -17,24 +18,23 @@ from pdf_bot.files.crypto import (
 from pdf_bot.files.document import ask_doc_task
 from pdf_bot.files.ocr import add_ocr_to_pdf
 from pdf_bot.files.photo import (
-    get_pdf_preview,
-    get_pdf_photos,
-    pdf_to_photos,
     ask_photo_results_type,
-    process_photo_task,
     ask_photo_task,
+    get_pdf_photos,
+    get_pdf_preview,
+    pdf_to_photos,
+    process_photo_task,
 )
 from pdf_bot.files.rename import ask_pdf_new_name, rename_pdf
 from pdf_bot.files.rotate import ask_rotate_degree, check_rotate_degree
 from pdf_bot.files.scale import (
     ask_scale_type,
     ask_scale_value,
-    check_scale_percent,
     check_scale_dimension,
+    check_scale_percent,
 )
 from pdf_bot.files.split import ask_split_range, split_pdf
 from pdf_bot.files.text import ask_text_type, get_pdf_text
-from pdf_bot.files.compress import compress_pdf
 from pdf_bot.language import set_lang
 from pdf_bot.utils import cancel
 

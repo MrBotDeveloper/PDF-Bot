@@ -1,19 +1,14 @@
 import os
-import pdf_diff
 import tempfile
 
+import pdf_diff
 from pdf_diff import NoDifferenceError
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
-from telegram.ext import ConversationHandler, CommandHandler, MessageHandler, Filters
+from telegram.ext import CommandHandler, ConversationHandler, Filters, MessageHandler
 
-from pdf_bot.constants import PDF_INVALID_FORMAT, PDF_OK, CANCEL, BACK, TEXT_FILTER
-from pdf_bot.utils import (
-    check_pdf,
-    send_result_file,
-    check_user_data,
-    cancel,
-)
+from pdf_bot.constants import BACK, CANCEL, PDF_INVALID_FORMAT, PDF_OK, TEXT_FILTER
 from pdf_bot.language import set_lang
+from pdf_bot.utils import cancel, check_pdf, check_user_data, send_result_file
 
 WAIT_FIRST = 0
 WAIT_SECOND = 1

@@ -6,15 +6,6 @@ from typing import List
 
 import img2pdf
 import noteshrink
-from pdf_bot.constants import BEAUTIFY, CANCEL, REMOVE_LAST, TEXT_FILTER, TO_PDF
-from pdf_bot.language import set_lang
-from pdf_bot.utils import (
-    cancel,
-    check_user_data,
-    send_file_names,
-    send_result_file,
-    reply_with_cancel_btn,
-)
 from telegram import (
     ChatAction,
     ParseMode,
@@ -29,6 +20,16 @@ from telegram.ext import (
     ConversationHandler,
     Filters,
     MessageHandler,
+)
+
+from pdf_bot.constants import BEAUTIFY, CANCEL, REMOVE_LAST, TEXT_FILTER, TO_PDF
+from pdf_bot.language import set_lang
+from pdf_bot.utils import (
+    cancel,
+    check_user_data,
+    reply_with_cancel_btn,
+    send_file_names,
+    send_result_file,
 )
 
 WAIT_PHOTO = 0

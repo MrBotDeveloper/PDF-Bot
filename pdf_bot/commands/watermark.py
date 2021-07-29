@@ -2,17 +2,11 @@ import tempfile
 
 from PyPDF2 import PdfFileWriter
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
-from telegram.ext import ConversationHandler, CommandHandler, MessageHandler, Filters
+from telegram.ext import CommandHandler, ConversationHandler, Filters, MessageHandler
 
-from pdf_bot.constants import PDF_INVALID_FORMAT, PDF_OK, CANCEL, BACK, TEXT_FILTER
-from pdf_bot.utils import (
-    check_pdf,
-    open_pdf,
-    write_send_pdf,
-    check_user_data,
-    cancel,
-)
+from pdf_bot.constants import BACK, CANCEL, PDF_INVALID_FORMAT, PDF_OK, TEXT_FILTER
 from pdf_bot.language import set_lang
+from pdf_bot.utils import cancel, check_pdf, check_user_data, open_pdf, write_send_pdf
 
 WAIT_SRC = 0
 WAIT_WMK = 1

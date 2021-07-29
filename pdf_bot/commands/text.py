@@ -2,16 +2,12 @@ import os
 import tempfile
 
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
-from telegram.ext import ConversationHandler, CommandHandler, MessageHandler, Filters
-
+from telegram.ext import CommandHandler, ConversationHandler, MessageHandler
 from weasyprint import HTML
 
 from pdf_bot.constants import CANCEL, TEXT_FILTER
-from pdf_bot.utils import (
-    send_result_file,
-    cancel,
-)
 from pdf_bot.language import set_lang
+from pdf_bot.utils import cancel, send_result_file
 
 WAIT_TEXT = 0
 BASE_HTML = """<!DOCTYPE html>

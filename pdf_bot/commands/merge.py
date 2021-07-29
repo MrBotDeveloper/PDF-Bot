@@ -2,6 +2,23 @@ import tempfile
 from collections import defaultdict
 from threading import Lock
 
+from PyPDF2 import PdfFileMerger
+from PyPDF2.utils import PdfReadError
+from telegram import (
+    ChatAction,
+    ParseMode,
+    ReplyKeyboardMarkup,
+    ReplyKeyboardRemove,
+    Update,
+)
+from telegram.ext import (
+    CallbackContext,
+    CommandHandler,
+    ConversationHandler,
+    Filters,
+    MessageHandler,
+)
+
 from pdf_bot.constants import (
     CANCEL,
     DONE,
@@ -15,25 +32,9 @@ from pdf_bot.utils import (
     cancel,
     check_pdf,
     check_user_data,
+    reply_with_cancel_btn,
     send_file_names,
     write_send_pdf,
-    reply_with_cancel_btn,
-)
-from PyPDF2 import PdfFileMerger
-from PyPDF2.utils import PdfReadError
-from telegram import (
-    ParseMode,
-    ReplyKeyboardMarkup,
-    ReplyKeyboardRemove,
-    Update,
-    ChatAction,
-)
-from telegram.ext import (
-    CallbackContext,
-    CommandHandler,
-    ConversationHandler,
-    Filters,
-    MessageHandler,
 )
 
 WAIT_MERGE = 0

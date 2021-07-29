@@ -3,17 +3,17 @@ import os
 from dotenv import load_dotenv
 from logbook import Logger
 from slack import WebClient
-from telegram import Update, ChatAction
+from telegram import ChatAction, Update
 from telegram.ext import (
+    CallbackContext,
     CommandHandler,
     ConversationHandler,
     MessageHandler,
-    CallbackContext,
 )
 from textblob import TextBlob
 from textblob.exceptions import TranslatorError
 
-from pdf_bot.constants import TEXT_FILTER, CANCEL
+from pdf_bot.constants import CANCEL, TEXT_FILTER
 from pdf_bot.language import set_lang
 from pdf_bot.utils import cancel, reply_with_cancel_btn
 
@@ -22,6 +22,7 @@ SLACK_TOKEN = os.environ.get("SLACK_TOKEN")
 
 load_dotenv()
 DEV_TELE_ID = int(os.environ.get("DEV_TELE_ID"))
+
 
 def feedback_cov_handler() -> ConversationHandler:
     conv_handler = ConversationHandler(
@@ -91,8 +92,8 @@ def receive_feedback(update: Update, context: CallbackContext) -> int:
         response = client.chat_postMessage(channel="#pdf-bot-feedback", text=text)
 
         if response["ok"] and response["message"]["text"] == text:
-            success = True 
-            
+            success = True
+
     if SLACK_TOKEN is None:
         context.bot.send_message(DEV_TELE_ID, text=text)
 

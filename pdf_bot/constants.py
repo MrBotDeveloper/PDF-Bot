@@ -89,7 +89,7 @@ LANGUAGE = "language"
 # Language constants
 LANGUAGES = {
     "🇬🇧 English (UK)": "en_GB",
-    "🇺🇸 English (US)": "en_US",    
+    "🇺🇸 English (US)": "en_US",
     "🇭🇰 廣東話": "zh_HK",
     "🇹🇼 繁體中文": "zh_TW",
     "🇨🇳 简体中文": "zh_CN",
