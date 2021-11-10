@@ -1,5 +1,5 @@
 Babel==2.9.1
-google-cloud-datastore==2.3.0
+google-cloud-datastore==2.4.0
 humanize==3.12.0
 img2pdf==0.4.3
 Logbook==1.5.3
