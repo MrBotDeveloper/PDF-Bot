@@ -12,7 +12,7 @@ python-dotenv==0.19.2
 python-telegram-bot==13.9
 Pillow==9.0.0
 PyPDF2==1.26.0
-requests==2.26.0
+requests==2.27.0
 slackclient==2.9.3
 textblob==0.17.1
 WeasyPrint==53.4
