@@ -13,7 +13,7 @@ python-telegram-bot==13.11
 Pillow==9.1.0
 PyPDF2==1.27.4
 requests==2.27.1
-slackclient==2.9.3
+slackclient==2.9.4
 textblob==0.17.1
 WeasyPrint==54.3
 git+https://github.com/zeshuaro/noteshrink.git#egg=noteshrink
