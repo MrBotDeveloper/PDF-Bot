@@ -15,6 +15,6 @@ PyPDF2==1.27.4
 requests==2.27.1
 slackclient==2.9.3
 textblob==0.17.1
-WeasyPrint==54.3
+WeasyPrint==55.0
 git+https://github.com/zeshuaro/noteshrink.git#egg=noteshrink
 git+https://github.com/zeshuaro/pdf-diff#egg=pdf_diff
