@@ -1,10 +1,10 @@
-Babel==2.9.1
+Babel==2.10.1
 google-cloud-datastore==2.6.0
 humanize==4.0.0
 img2pdf==0.4.4
 Logbook==1.5.3
 matplotlib==3.5.1
-ocrmypdf==13.4.3
+ocrmypdf==13.4.5
 pdfCropMargins==1.0.5
 pdf2image==1.16.0
 pdfminer.six==20220319
@@ -13,8 +13,8 @@ python-telegram-bot==13.11
 Pillow==9.1.0
 PyPDF2==1.28.2
 requests==2.27.1
-slackclient==2.9.3
+slackclient==2.9.4
 textblob==0.17.1
-WeasyPrint==54.3
+WeasyPrint==55.0
 git+https://github.com/zeshuaro/noteshrink.git#egg=noteshrink
 git+https://github.com/zeshuaro/pdf-diff#egg=pdf_diff
