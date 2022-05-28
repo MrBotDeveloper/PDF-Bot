@@ -10,5 +10,5 @@ jobs:
     steps:
     - uses: actions/first-interaction@v1
       with:
-        repo-token: ${{ secrets.GIT_HUB_TOKEN }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
         pr-message: "Thanks a lot Sir/Ma'am for contributing on the repo ❤️"
