@@ -11,7 +11,7 @@ pdfminer.six==20220524
 python-dotenv==0.20.0
 python-telegram-bot==13.12
 Pillow==9.1.1
-PyPDF2==1.28.2
+PyPDF2==1.28.4
 requests==2.27.1
 slackclient==2.9.4
 textblob==0.17.1
