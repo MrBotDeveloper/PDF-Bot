@@ -1,6 +1,6 @@
 Babel==2.10.1
 google-cloud-datastore==2.6.0
-humanize==4.1.0
+humanize==4.3.0
 img2pdf==0.4.4
 Logbook==1.5.3
 matplotlib==3.5.2
