@@ -9,7 +9,7 @@ pdfCropMargins
 pdf2image
 pdfminer.six
 python-dotenv
-python-telegram-bot==13.12
+python-telegram-bot==20.4
 Pillow
 PyPDF2
 requests
