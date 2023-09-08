@@ -127,7 +127,7 @@ def main():
 
     # Start the Bot
     updater.start_polling()
-    log.notice("Bot started polling")
+    log.notice("Bot started polling.")
 
     # Run the bot until the you presses Ctrl-C or the process receives SIGINT,
     # SIGTERM or SIGABRT. This should be used most of the time, since
@@ -172,7 +172,7 @@ def help_msg(update, context):
 
     update.effective_message.reply_text(
         _(
-            "You can perform most of the tasks by sending me one of the followings:\n"
+            "You can perform most of the tasks by sending me one of the following:\n"
             "- PDF files\n- Photos\n- Webpage links\n\n"
             "The rest of the tasks can be performed by using the commands below:\n"
             "/compare - compare PDF files\n"
@@ -215,17 +215,17 @@ def send_msg(update: Update, context: CallbackContext):
 
     try:
         context.bot.send_message(tele_id, message)
-        update.effective_message.reply_text("Message sent")
+        update.effective_message.reply_text("Message sent.")
     except Exception as e:
         log = Logger()
         log.error(e)
-        update.effective_message.reply_text("Failed to send message")
+        update.effective_message.reply_text("Failed to send message.")
 
 
 def error_callback(update: Update, context: CallbackContext):
     if context.error is not Unauthorized:
         log = Logger()
-        log.error(f'Update "{update}" caused error "{context.error}"')
+        log.error(f'Update "{update}" caused error "{context.error}."')
 
 
 if __name__ == "__main__":
