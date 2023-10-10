@@ -36,7 +36,7 @@ jobs:
           echo NUM_DIFFS=$(git diff --shortstat | egrep -o '[0-9]+ i' | egrep -o '[0-9]+') >> $GITHUB_ENV
       - name: Commit changes 🆕
         if: env.NUM_DIFFS > 1
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Update localization source file
           file_pattern: locale/en_GB/LC_MESSAGES/pdf_bot.po
