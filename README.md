@@ -55,7 +55,7 @@ GOOGLE_APPLICATION_CREDENTIALS - Your GCP Credentials get from Google Cloud
 
 ```vars.txt
 STRIPE_TOKEN - Stripe.com token for receiving Donations.
-SLACK_TOKEN - slack.com api token to recieve Feedbacks on Slack.com if not entered you will recieve in your Telegram 
+SLACK_TOKEN - slack.com api token to receive Feedbacks on Slack.com if not entered you will receive in your Telegram 
 ```
 
 ## Where To Get The Optional Vars...
